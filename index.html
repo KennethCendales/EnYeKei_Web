@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+  
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <title>EnYeKei: Tienda de Ropa E-Commerce Responsiva</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo"> EnYeKei. </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="ri-home-line"></i>
+                <span>Inicio</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#new" class="nav__link">
+                <i class="ri-price-tag-3-line"></i>
+                <span>Novedades</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#collection" class="nav__link">
+                <i class="ri-compass-line"></i>
+                <span>Colección</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#products" class="nav__link">
+                <i class="ri-t-shirt-line"></i>
+                <span>Productos</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Botón de cambio de tema -->
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
+        <!-- Icono del carrito -->
+        <div class="nav__cart" id="cart-button">
+          <i class="ri-shopping-cart-line"></i>
+          <span id="cart-count" class="nav__cart-count">0</span>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAINNN====================-->
+    <main class="main">
+      <!--==================== INICIO ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">
+              Nueva Colección <br />
+              de Ropa
+            </h1>
+            <p class="home__description">
+              La nueva colección de ropa <br />
+              de las mejores marcas de este año.
+            </p>
+            <a href="#new" class="button__link">
+              Explorar <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+          <div class="home__images">
+            <img src="./assets/img/home1.png" alt="imagen inicio" loading="lazy" />
+            <img src="./assets/img/home2.png" alt="imagen inicio" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <!--==================== NUEVO ====================-->
+      <section class="new section" id="new">
+        <h2 class="section__title">Nuevas Categorías</h2>
+        <div class="new__container container grid">
+          <article class="new__card">
+            <img src="./assets/img/new1.png" alt="imagen novedad" class="new__img" loading="lazy"/>
+            <a href="#" class="new__link">
+              <div class="new__data">
+                <h2 class="new__title">Sudaderas y Capuchas</h2>
+                <span class="new__subtitle"> Colección de invierno </span>
+              </div>
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+          <article class="new__card">
+            <img src="./assets/img/new2.png" alt="imagen novedad" class="new__img" loading="lazy" />
+            <a href="#" class="new__link">
+              <div class="new__data">
+                <h2 class="new__title">Pantalones y Chaquetas</h2>
+                <span class="new__subtitle"> Colección de invierno </span>
+              </div>
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+          <article class="new__card">
+            <img src="./assets/img/new3.png" alt="imagen novedad" class="new__img" loading="lazy"/>
+            <a href="#" class="new__link">
+              <div class="new__data">
+                <h2 class="new__title">Abrigos y Conjuntos</h2>
+                <span class="new__subtitle"> Colección de invierno </span>
+              </div>
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== COleccion ====================-->
+      <section class="collection section" id="collection">
+        <div class="collection__container container">
+          <div class="collection__explore">
+            <div class="collection__data-men">
+              <h2 class="collection__title">
+                Colección <br />
+                de Hombres
+              </h2>
+              <a href="#" class="button__link">
+                Explorar Ropa <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+            <img src="./assets/img/collection1.png" alt="imagen colección" loading="lazy" />
+          </div>
+          <div class="collection__explore">
+            <img src="./assets/img/collection2.png" alt="imagen colección" loading="lazy"/>
+            <div class="collection__data-women">
+              <h2 class="collection__title">
+                Colección <br />
+                de Mujeres
+              </h2>
+              <a href="#" class="button__link">
+                Explorar Ropa <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PRODUCTOS ====================-->
+      <section class="products section" id="products">
+        <h2 class="section__title">Mejores Productos</h2>
+        <div class="products__container container swiper">
+          <div class="swiper-wrapper">
+            <article class="products__card swiper-slide">
+              <img
+                src="./assets/img/product1.png"
+                alt="imagen producto"
+                class="products__img"
+                loading="lazy"
+              />
+              <h2 class="products__title">Chaqueta Gotland negra</h2>
+              <span class="products__price">$124.99</span>
+              <button class="button__link add-to-cart" data-id="1">
+                Agregar al Carrito
+              </button>
+            </article>
+            <article class="products__card swiper-slide">
+              <img
+                src="./assets/img/product2.png"
+                alt="imagen producto"
+                class="products__img"
+                loading="lazy"
+              />
+              <h2 class="products__title">Shorts deportivos negros</h2>
+              <span class="products__price">$34.99</span>
+              <button class="button__link add-to-cart" data-id="2">
+                Agregar al Carrito
+              </button>
+            </article>
+            <article class="products__card swiper-slide">
+              <img
+                src="./assets/img/product3.png"
+                alt="imagen producto"
+                class="products__img"
+                loading="lazy"
+              />
+              <h2 class="products__title">Chaqueta acolchada Knox</h2>
+              <span class="products__price">$97.99</span>
+              <button class="button__link add-to-cart" data-id="3">
+                Agregar al Carrito
+              </button>
+            </article>
+            <article class="products__card swiper-slide">
+              <img
+                src="./assets/img/product4.png"
+                alt="imagen producto"
+                class="products__img"
+                loading="lazy"
+              />
+              <h2 class="products__title">Pantalones deportivos azules</h2>
+              <span class="products__price">$69.99</span>
+              <button class="button__link add-to-cart" data-id="4">
+                Agregar al Carrito
+              </button>
+            </article>
+          </div>
+          <div class="swiper-button-next">
+            <i class="ri-arrow-right-line"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="ri-arrow-left-line"></i>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CARRITO ====================-->
+      <div class="cart-overlay" id="cart-overlay">
+        <div class="cart" id="cart">
+          <div class="cart__header">
+            <h2>Tu Carrito</h2>
+            <button class="cart__close" id="cart-close">
+              <i class="ri-close-line"></i>
+            </button>
+          </div>
+          <div class="cart__items" id="cart-items">
+          
+          </div>
+          <div class="cart__footer">
+            <h3>Total: $<span id="cart-total">0.00</span></h3>
+            <button id="checkout-button" class="button">Finalizar Compra</button>
+          </div>
+        </div>
+      </div>
+
+      <section class="brand section">
+        <h2 class="section__title">Marcas que Vendemos</h2>
+        <div class="brand__container container grid">
+          <img
+            src="./assets/img/logo1.png"
+            alt="imagen logo"
+            class="brand__img"
+            loading="lazy"
+          />
+          <img
+            src="./assets/img/logo2.png"
+            alt="imagen logo"
+            class="brand__img"
+            loading="lazy"
+          />
+          <img
+            src="./assets/img/logo3.png"
+            alt="imagen logo"
+            class="brand__img"
+            loading="lazy"
+          />
+          <img
+            src="./assets/img/logo4.png"
+            alt="imagen logo"
+            class="brand__img"
+            loading="lazy"
+          />
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTERrr ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div>
+          <a href="#" class="footer__logo">EnYeKei.</a>
+          <p class="footer__description">
+            Comprometidos en traerte la <br />
+            mejor ropa de las marcas <br />
+            más reconocidas.
+          </p>
+        </div>
+        <div class="footer__content">
+          <div>
+            <h3 class="footer__title">Compañía</h3>
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">EnYeKei</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Categoría</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Información de contacto</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer__title">Blog</h3>
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">Eventos</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Noticias populares</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Noticias recientes</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer__title">Oficina</h3>
+            <p class="footer__information">
+              Lunes - Sábado <br />
+              9AM - 10PM
+            </p>
+          </div>
+          <div>
+            <h3 class="footer__title">Contáctanos</h3>
+            <ul class="footer__social">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=51123456789&text=Hola, ¡más información!"
+                class="footer__social-link"
+                target="_blank"
+              >
+                <i class="ri-whatsapp-line"></i>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__info container">
+        <span class="footer__copy">
+          &#169; EnYeKei. Todos los derechos reservados.
+        </span>
+        <a href="#" class="footer__privacy">Términos & Condiciones</a>
+      </div>
+    </footer>
+
+    <!--========== SCROLLEAR ==========-->
+    <a href="#" class="scrollUp" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a> 
+    <script src="./assets/js/scrollreveal.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN DEL JS ===============-->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
